@@ -4,8 +4,8 @@ import shutil
 import time
 
 prefix_archive = "doc"
-path_A = "C:/Users/Rafael/Documents/Projetinho_Thalesinho/path_A"
-path_B = "C:/Users/Rafael/Documents/Projetinho_Thalesinho/path_B"
+path_A = "C:/Users/Rafael/Desktop/Testes_Thales/path_A"
+path_B = "C:/Users/Rafael/Desktop/Testes_Thales/path_B"
 execution_time = 1
 
 
@@ -27,7 +27,7 @@ def copy_files_to_pathB(archives):
 
     try:
         shutil.copy(path_A + "/" + archives, path_B)
-        write_log()
+        write_log(archives)
         return 1
     except:
         print("could not copy the file" + archives)
@@ -44,3 +44,7 @@ def write_log(archive):
     info_list.append(time.strftime('%d-%m-%y %H:%M:%S', time.localtime()))
 
     file.writelines(info_list)
+
+
+def main():
+    search_files(path_A, prefix_archive, path_B)
