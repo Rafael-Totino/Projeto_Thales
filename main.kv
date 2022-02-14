@@ -1,0 +1,48 @@
+<MyBoxLayout>:
+    orientation: 'vertical'
+    BoxLayout:
+        Label:
+            text: 'Regx'    
+            font_size: 20
+        TextInput:
+            id: input_regx
+            font_size: 30
+
+    BoxLayout:
+        Label:
+            text: 'Folder origin'
+            font_size: 30
+        TextInput:
+            id: input_folder_origin
+            font_size: 30
+
+    BoxLayout:
+        Label:
+            text: 'Folder destination'
+            font_size: 30
+        TextInput:
+            id: input_folder_dest
+            font_size:30
+    
+    Button:
+        text: 'Save Changes'
+        on_press: root.save_infos()
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            id: my_label
+            font_size: 15
+            text: "After save the informations you can start the aplication any moment"
+
+        Switch:
+            active: False
+            font_size: 15
+            on_active: root.switch_click(self, self.active)
+                
+
+            
+
+    
