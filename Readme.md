@@ -1,4 +1,4 @@
-<h1 align="center">Nome do Projeto</h1>
+<h1 align="center">Projeto Thales</h1>
 <p align="center">Projeto de uma mini interface que captura as informações do usuario e copia arquivos com prefixo pre estabelecido para outro diretorio</p>
 
 ### Pré-requisitos
@@ -31,3 +31,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Python](https://www.python.org/)
 - [Kivy](https://kivy.org/#home)
 
+```
