@@ -52,7 +52,7 @@ def copy_files_to_pathB(path_A, path_B, archives):
 #   Is called every time a file is copied
 # --------------------------------------------------
 def write_log(path_A, path_B, archive):
-    file = open("log_teste1.txt", "a")
+    file = open("Log.txt", "a")
 
     info_list = list()
     info_list.append("file name -> \n" + archive)
