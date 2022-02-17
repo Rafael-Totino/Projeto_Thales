@@ -1,0 +1,18 @@
+file name -> doc_1.txt 
+origin folder -> C:/Users/Rafael/Desktop/Testes_Thales/path_A
+destination folder -> C:/Users/Rafael/Desktop/Testes_Thales/path_B
+13-02-22 23:02:19
+
+/////////////////////////////////////////////////////////////////////////////
+
+file name -> doc_2.txt
+origin folder -> C:/Users/Rafael/Desktop/Testes_Thales/path_A
+destination folder -> C:/Users/Rafael/Desktop/Testes_Thales/path_B
+13-02-22 23:02:19
+
+/////////////////////////////////////////////////////////////////////////////
+
+file name -> doc_3.txt
+origin folder -> C:/Users/Rafael/Desktop/Testes_Thales/path_A
+destination folder -> C:/Users/Rafael/Desktop/Testes_Thales/path_B
+13-02-22 23:02:19

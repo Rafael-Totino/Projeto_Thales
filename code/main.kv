@@ -1,0 +1,95 @@
+<MyBoxLayout>:
+    canvas.before:
+        Color:
+            rgba: 0, 1, 0, 1
+    orientation: 'vertical'
+
+    #metade de cima
+    BoxLayout:
+        orientation: 'horizontal'
+
+        #esquerda em cima
+        GridLayout:
+            cols: 1
+            rows: 4
+            padding: 30
+            spacing: 25
+            row_force_default: True
+            row_default_height: 40
+            BoxLayout:
+                TextInput:
+                    id: input_timer
+                    hint_text:'Enter the timer in seconds'
+                    font_size: 15
+
+            BoxLayout:
+                TextInput:
+                    id: input_regx
+                    hint_text:'Enter regx prefix files'
+                    font_size: 15
+                    
+
+            BoxLayout:
+                TextInput:
+                    id: input_folder_origin
+                    hint_text:'Enter the origin folder'
+                    font_size: 15
+                    
+
+            BoxLayout:
+                TextInput:
+                    id: input_folder_dest
+                    hint_text:'Enter the destination folder'
+                    font_size:15
+                    
+        
+        #direita em cima
+        GridLayout:
+            cols: 1
+            rows: 2
+            padding: 20
+            spacing: 100
+            row_force_default: True
+            row_default_height: 40
+
+            BoxLayout:
+                orientation: "vertical"
+                size: root.width, root.height
+
+                Label:
+                    id: my_label
+                    text_size: root.width, None
+                    text_size: cm(8), cm(5)
+                    font_size: 15
+                    text: "After save the informations you can start the aplication any moment"
+
+                Switch:
+                    active: False
+                    font_size: 15
+                    on_active: root.switch_click(self, self.active)
+            
+            BoxLayout:
+                
+                Button:
+                    
+                    text: 'Save Changes'
+                    on_press: root.save_infos()
+                
+    #metade de baixo
+    BoxLayout:
+        orientation: 'horizontal'
+        
+        GridLayout:
+            cols: 2
+            rows: 1
+            padding: 30
+            spacing: 25
+            #row_force_default: True
+            #row_default_height: 40
+            BoxLayout:
+                Button:
+                    
+
+            BoxLayout:
+                Button:
+                    
